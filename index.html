@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ▼ サイトのタイトルと説明（検索結果やタブに表示されます） -->
+  <title>山田 太郎 | Portfolio</title>
+  <meta name="description" content="Webデザイナー・エンジニア 山田太郎のポートフォリオサイトです。">
+
+  <!-- 日本語フォント（Google Fonts） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== ヘッダー ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">Taro<span>.</span></a>
+
+      <!-- スマホ用メニューボタン -->
+      <button class="menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#about">自己紹介</a>
+        <a href="#works">実績</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== ヒーロー（トップ） ===================== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__label fade-in">Web Designer / Developer</p>
+        <h1 class="hero__title fade-in">
+          シンプルで、<br>
+          <span class="accent">伝わる</span>デザインを。
+        </h1>
+        <p class="hero__text fade-in">
+          こんにちは、山田太郎です。<br>
+          使う人にやさしいWebサイトをつくっています。
+        </p>
+        <div class="hero__buttons fade-in">
+          <a href="#works" class="btn btn--primary">実績を見る</a>
+          <a href="#contact" class="btn btn--outline">お問い合わせ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 自己紹介 ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title fade-in">自己紹介<span>About</span></h2>
+
+        <div class="about fade-in">
+          <!-- ▼ 写真に変えたい場合は、下の div を <img src="images/profile.jpg" alt="プロフィール写真" class="about__photo"> に置き換えてください -->
+          <div class="about__photo about__photo--placeholder">T</div>
+
+          <div class="about__body">
+            <h3 class="about__name">山田 太郎 <small>Taro Yamada</small></h3>
+            <p>
+              東京を拠点に活動するWebデザイナー・フロントエンドエンジニアです。
+              「わかりやすさ」と「心地よさ」を大切に、企業サイトやLP、
+              個人向けのWebサイトを制作しています。
+            </p>
+            <p>
+              デザインからコーディングまで一貫して担当できるのが強みです。
+              お気軽にご相談ください。
+            </p>
+
+            <!-- ▼ スキル一覧（自由に追加・削除できます） -->
+            <ul class="skills">
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>Figma</li>
+              <li>WordPress</li>
+              <li>レスポンシブデザイン</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 実績 ===================== -->
+    <section class="section section--gray" id="works">
+      <div class="container">
+        <h2 class="section__title fade-in">実績紹介<span>Works</span></h2>
+
+        <!-- ▼ 実績カード：1つの <article> が1件分です。コピーして増やせます -->
+        <div class="works">
+
+          <article class="work-card fade-in">
+            <div class="work-card__thumb" style="--c1:#6366f1; --c2:#a855f7;">
+              <!-- 画像を使う場合：<img src="images/work1.jpg" alt="カフェのWebサイト"> -->
+              <span>Cafe</span>
+            </div>
+            <div class="work-card__body">
+              <p class="work-card__tag">Webサイト制作</p>
+              <h3 class="work-card__title">カフェのブランドサイト</h3>
+              <p class="work-card__text">落ち着いた雰囲気を伝える、写真中心のデザイン。スマホからの予約導線を改善しました。</p>
+            </div>
+          </article>
+
+          <article class="work-card fade-in">
+            <div class="work-card__thumb" style="--c1:#0ea5e9; --c2:#22d3ee;">
+              <span>LP</span>
+            </div>
+            <div class="work-card__body">
+              <p class="work-card__tag">ランディングページ</p>
+              <h3 class="work-card__title">オンライン英会話のLP</h3>
+              <p class="work-card__text">申込率の向上を目的に構成から設計。公開後、問い合わせ数が1.5倍になりました。</p>
+            </div>
+          </article>
+
+          <article class="work-card fade-in">
+            <div class="work-card__thumb" style="--c1:#f97316; --c2:#facc15;">
+              <span>App</span>
+            </div>
+            <div class="work-card__body">
+              <p class="work-card__tag">Webアプリ</p>
+              <h3 class="work-card__title">タスク管理ツール</h3>
+              <p class="work-card__text">JavaScriptで作成したシンプルなToDoアプリ。データはブラウザに保存されます。</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== お問い合わせ ===================== -->
+    <section class="section" id="contact">
+      <div class="container container--narrow">
+        <h2 class="section__title fade-in">お問い合わせ<span>Contact</span></h2>
+        <p class="contact__lead fade-in">
+          お仕事のご依頼・ご相談は、以下のフォームよりお気軽にご連絡ください。
+        </p>
+
+        <!--
+          ※このフォームは見た目と入力チェックのみです。実際にメールを受け取るには、
+          Formspree（https://formspree.io）などのサービスを使い、
+          action="https://formspree.io/f/xxxx" method="POST" を設定してください。
+        -->
+        <form class="contact-form fade-in" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">お名前 <span class="required">必須</span></label>
+            <input type="text" id="name" name="name" placeholder="例）山田 花子" required>
+            <p class="error-msg"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">メールアドレス <span class="required">必須</span></label>
+            <input type="email" id="email" name="email" placeholder="例）example@mail.com" required>
+            <p class="error-msg"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+            <textarea id="message" name="message" rows="6" placeholder="ご依頼内容やご質問をご記入ください" required></textarea>
+            <p class="error-msg"></p>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block">送信する</button>
+          <p class="form-success" id="formSuccess" hidden>
+            送信ありがとうございました！内容を確認のうえ、ご連絡いたします。
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== フッター ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Taro Yamada. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
